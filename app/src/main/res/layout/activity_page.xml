@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:textAlignment="textEnd"
+        android:weightSum="1">
+
+        <ExpandableListView
+            android:id="@+id/entry_list"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/unpaidAmount"
+            android:descendantFocusability="afterDescendants"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1px" />
+
+        <TextView
+            android:id="@+id/unpaidAmount"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="58dp"
+            android:padding="10sp"
+            android:text="@string/unpaid_4000"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp"
+            android:maxLength="18"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/paidAmount"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="58dp"
+            android:padding="10sp"
+            android:text="@string/paid_4000"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp"
+            android:maxLength="18"
+            android:textStyle="italic"
+            android:layout_toStartOf="@+id/button_add" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/button_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="26dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:src="@android:drawable/ic_input_add"
+            android:tint="@android:color/white"
+            app:borderWidth="0dp" />
+
+    </RelativeLayout>
+
+</FrameLayout>

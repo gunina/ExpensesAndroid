@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Expenses</string>
+    <string name="ok">OK</string>
+    <string name="cancel">CANCEL</string>
+    <string name="unpaid_4000">Unpaid: 4000</string>
+    <string name="paid_4000">Paid: 4000</string>
+    <string name="january">January</string>
+    <string name="done">Done</string>
+    <string name="delete">Delete</string>
+    <string name="Categories">Categories</string>
+    <string name="calendar">Calendar</string>
+    <string name="categories">Categories</string>
+</resources>
